@@ -1,0 +1,6 @@
+{
+  "ambientDependencies": {
+    "jquery": "registry:dt/jquery#1.10.0+20160316155526",
+    "lodash": "registry:dt/lodash#3.10.0+20160319050323"
+  }
+}

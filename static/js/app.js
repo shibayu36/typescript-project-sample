@@ -22198,7 +22198,7 @@ return jQuery;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],3:[function(require,module,exports){
-/// <reference path="./typings/tsd.d.ts" />
+/// <reference path="../../typings/browser.d.ts" />
 "use strict";
 var $ = require("jquery");
 var _ = require("lodash");

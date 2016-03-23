@@ -18,9 +18,9 @@
     "karma-mocha": "^0.2.1",
     "licensify": "^2.0.1",
     "lodash": "^3.10.1",
-    "tsd": "^0.6.5",
     "tsify": "^0.12.2",
     "typescript": "^1.6.2",
+    "typings": "^0.7.9",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   }
