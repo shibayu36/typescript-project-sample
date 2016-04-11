@@ -7,6 +7,8 @@ import module1 from "../module1";
 
 describe("module1 default function", () => {
     it("returns module1", () => {
-        assert.equal(module1(), "module1");
+        let expect: string;
+        expect = 'module1';
+        assert.equal(module1(), expect);
     });
 });
