@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Wed Jan 13 2016 23:06:44 GMT+0900 (JST)
+// Generated on Tue Mar 29 2016 09:36:39 GMT+0900 (JST)
 
 module.exports = function(config) {
   config.set({
@@ -10,11 +10,12 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha'],
+    frameworks: ['browserify', 'mocha'],
 
 
     // list of files / patterns to load in the browser
     files: [
+        'src/ts/test/**/*.ts'
     ],
 
 
@@ -26,6 +27,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+        'src/ts/**/*.ts': ['browserify']
     },
 
 
@@ -54,7 +56,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: [],
+    browsers: ['Chrome'],
 
 
     // Continuous Integration mode
@@ -63,6 +65,11 @@ module.exports = function(config) {
 
     // Concurrency level
     // how many browser should be started simultaneous
-    concurrency: Infinity
+    concurrency: Infinity,
+
+    browserify: {
+        plugin: ['tsify'],
+        extensions: ['.ts']
+    }
   })
 }
