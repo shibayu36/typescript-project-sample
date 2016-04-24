@@ -4,7 +4,8 @@
 
 import * as $ from "jquery";
 import * as _ from "lodash";
+import module1 from "./module1";
 
 $().ready(() => {
-    alert(_.camelCase('Foo Bar'));
+    alert(_.repeat(module1(), 3));
 });
