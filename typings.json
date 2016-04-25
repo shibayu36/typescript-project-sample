@@ -5,7 +5,7 @@
   "ambientDependencies": {
     "chai": "registry:dt/chai#3.4.0+20160317120654",
     "jquery": "registry:dt/jquery#1.10.0+20160316155526",
-    "lodash": "registry:dt/lodash#3.10.0+20160319050323",
+    "lodash": "registry:dt/lodash#3.10.0+20160330154726",
     "mocha": "registry:dt/mocha#2.2.5+20160317120654"
   }
 }
